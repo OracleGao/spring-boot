@@ -1,0 +1,14 @@
+server:
+  port: 28080
+  
+example:
+  validating:
+     token: k2data
+     cipher: sha1
+     encoding: utf-8
+     
+  message:
+     resprefix: 您发送的消息是：
+     
+endpoints.cors:
+  allowCredentials: true
