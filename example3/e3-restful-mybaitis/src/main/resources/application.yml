@@ -4,7 +4,7 @@ server:
     encoding:
       enabled: true
       force: true
-      charset: UTF-8
+      charset: UTF-8  
 
 endpoints:
   cors:
@@ -14,11 +14,14 @@ endpoints:
       - POST
     allowedHeaders: '*'
     allowedOrigins: '*'
+
+mybatis:
+  mapperLocations: classpath*:/example/dao/*Mapper.xml  
   
 example:
   validating:
-     token: k2data
-     cipher: sha1
-     encoding: utf-8
+    token: k2data
+    cipher: sha1
+    encoding: utf-8
   message:
-     resprefix: 您发送的消息是：
+    resprefix: 您发送的消息是：

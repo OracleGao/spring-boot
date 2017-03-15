@@ -1,11 +1,6 @@
 server:
-  port: 28080
-  http:
-    encoding:
-      enabled: true
-      force: true
-      charset: UTF-8
-
+  port: 18080
+ 
 endpoints:
   cors:
     allowCredentials: true
@@ -13,8 +8,18 @@ endpoints:
       - GET
       - POST
     allowedHeaders: '*'
-    allowedOrigins: '*'
-  
+    allowedOrigins: '*'  
+  shutdown:
+    enabled: true
+
+mybatis:
+  mapperLocations: classpath*:/example/dao/*Mapper.xml  
+
+management:
+  security:
+    enabled: false
+  contextPath: /actuator
+
 example:
   validating:
      token: k2data
