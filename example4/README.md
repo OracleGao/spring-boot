@@ -1,10 +1,10 @@
-#Support actuator 
+# Support actuator 
 add actuator dependency into pom.xml
 
-#Config actuator
+# Config actuator
 
-#Access actuator interface 
-##get
+# Access actuator interface 
+## get
 http://localhost:18080/actuator/health
 http://localhost:18080/actuator/metrics
 http://localhost:18080/actuator/mappings
@@ -15,5 +15,5 @@ http://localhost:18080/actuator/beans
 http://localhost:18080/actuator/dump
 http://localhost:18080/actuator/trace
 
-##post
+## post
 http://localhost:18080/actuator/shutdown

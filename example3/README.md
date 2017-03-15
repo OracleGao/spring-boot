@@ -1,8 +1,8 @@
-#Support mybatis 
+# Support mybatis 
 add mybatis dependency into pom.xml
 
-#Config mybatis and datasource
+# Config mybatis and datasource
 
-#Develop Data Access object
+# Develop Data Access object
 
-#Add transaction support
+# Add transaction support
