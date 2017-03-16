@@ -1,6 +1,9 @@
 # 什么是spring boot?
 spring boot 是根据约定优于配置的解决方案，创建独立的、产品级的应用的spring框架。
 
+## 官方例子
+git clone https://github.com/spring-guides/gs-rest-service.git
+
 # 为什么会产生spring boot
 - 难以构建开发环境
 - 组件版本依赖冲突
