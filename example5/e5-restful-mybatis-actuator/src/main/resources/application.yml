@@ -22,5 +22,5 @@ example.message:
   resprefix: 您发送的消息是：
   
 mybatis:
-  mapperLocations: classpath*:example/dao/*Mapper.xml 
+  mapperLocations: classpath*:/mappers/*Mapper.xml
   configLocation: classpath:mybatis-config.xml
