@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import example.bean.MessageBean;
-import example.handler.service.MessageService;
+import example.service.MessageService;
 
 @RestController
 @RequestMapping("/message")

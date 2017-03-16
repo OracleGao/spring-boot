@@ -1,21 +1,35 @@
-# Application.properties vs application.yml
+# 添加utf-8字符集支持
+添加application
 
-# Add utf-8 encoding support
+# 添加跨域支持
+添加application配置
 
-# Support cors
+# 添加json消息协议支持
+默认支持
 
-# Add json message support
-add jackson dependency into pom.xml
+# 添加xml消息格式支持
+添加maven依赖
 
-# Add xml message support
-add jackson xml dependency into pom.xml
+# 开发Restful消息接口
+- 接收客户端发送的xml格式消息,解析消息内容content，
+- 调换发送者fromUserName和接收者toUserName,
+- 根据配置，给收到的消息加前缀并
+- 以json格式返回处理过的消息
 
-# Develop a new restful api with xml and json message support
+## 处理配置项example.message.resprefix
+
+##开发restful接口和相应功能
+
+## 测试
+### url
 http://localhost:18080/message
+### method
 post
-content-type: text/xml
+### Content-Type
+text/xml
+### body
 <xml>
 <fromUserName>Clyne</fromUserName>
 <toUserName>MessageServer</toUserName>
-<content>hello world!</content>
+<content>好好学习，天天向上</content>
 </xml>

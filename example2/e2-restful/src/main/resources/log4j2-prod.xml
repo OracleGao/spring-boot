@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <property name="PROJECT_NAME">example</property>
+        <property name="LOG_PATH">/var/log/${PROJECT_NAME}</property>
+        <property name="LOG_FILE">example</property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>%-d{yyyy-MM-dd HH:mm:ss} [%p] [%c] - %m%n</pattern>
+            </PatternLayout>
+        </Console>
+        <RollingRandomAccessFile name="rollingFile" fileName="${LOG_PATH}/${LOG_FILE}.log"
+                                 filePattern="${LOG_PATH}/$${date:yyyyMM}/${LOG_FILE}-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <pattern>%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] - %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="50"/>
+        </RollingRandomAccessFile>
+    </Appenders>
+    <Loggers>
+        <AsyncLogger name="org.springframework" level="info" />
+        <AsyncLogger name="example" level="info" />
+        <AsyncRoot level="info">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="rollingFile" />
+        </AsyncRoot>
+    </Loggers>
+</Configuration>

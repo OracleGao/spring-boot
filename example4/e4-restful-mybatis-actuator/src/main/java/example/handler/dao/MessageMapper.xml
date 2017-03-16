@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-
-<mapper namespace="example.handler.dao.MessageDao" >
-	<insert id="insert" useGeneratedKeys="true" keyProperty="value.mId">
-		insert into t_message (from_user_name, to_user_name, content) values(#{value.fromUserName}, #{value.toUserName}, #{value.content});
-	</insert>
-</mapper>

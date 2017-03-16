@@ -1,11 +1,11 @@
 package example.bean;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class MessageBean {
 
-	@JsonIgnoreProperties
-	private String mid;
+	@JsonIgnore
+	private String mId;
 	private String fromUserName;
 	private String toUserName;
 	private String content;
@@ -14,12 +14,12 @@ public class MessageBean {
 		super();
 	}
 
-	public String getMid() {
-		return mid;
+	public String getmId() {
+		return mId;
 	}
 
-	public void setMid(String mid) {
-		this.mid = mid;
+	public void setmId(String mId) {
+		this.mId = mId;
 	}
 
 	public String getToUserName() {

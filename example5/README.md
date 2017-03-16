@@ -1,3 +1,7 @@
-# dev vs prod
+# 单元测试
+- 添加maven依赖
+- 实现单元测试
 
-# jar vs war
+# 发布方式jar vs war
+- 修改pom.xml
+- ./mvnw install
