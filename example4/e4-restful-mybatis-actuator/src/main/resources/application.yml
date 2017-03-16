@@ -1,6 +1,14 @@
-server:
-  port: 18080
- 
+spring:
+  profiles:
+    active: dev
+    
+server:    
+  http:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+      
 endpoints:
   cors:
     allowCredentials: true
@@ -8,22 +16,11 @@ endpoints:
       - GET
       - POST
     allowedHeaders: '*'
-    allowedOrigins: '*'  
-  shutdown:
-    enabled: true
-
+    allowedOrigins: '*'
+    
+example.message:
+  resprefix: 您发送的消息是：
+  
 mybatis:
-  mapperLocations: classpath*:/example/dao/*Mapper.xml  
-
-management:
-  security:
-    enabled: false
-  contextPath: /actuator
-
-example:
-  validating:
-     token: k2data
-     cipher: sha1
-     encoding: utf-8
-  message:
-     resprefix: 您发送的消息是：
+  mapperLocations: classpath*:example/dao/*Mapper.xml 
+  configLocation: classpath:mybatis-config.xml

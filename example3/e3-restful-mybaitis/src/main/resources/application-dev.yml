@@ -9,10 +9,3 @@ spring:
     url: jdbc:h2:mem:message:db
     schema: classpath:schema.sql
     data: classpath:data.sql
-    
-management:
-  security:
-    enabled: false
-  contextPath: /actuator   
-
-endpoints.shutdown.enabled: true
