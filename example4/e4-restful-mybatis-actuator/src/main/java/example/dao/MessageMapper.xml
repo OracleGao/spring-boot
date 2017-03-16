@@ -5,6 +5,6 @@
 		insert into t_message (from_user_name, to_user_name, content) values(#{value.fromUserName}, #{value.toUserName}, #{value.content})
 	</insert>
 	<select id="query" resultType="example.bean.MessageBean">
-		select m_id, from_user_name, to_user_name, content	from t_message
+		select m_id, from_user_name, to_user_name, content from t_message
 	</select>
 </mapper>
