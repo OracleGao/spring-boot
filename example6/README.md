@@ -57,3 +57,6 @@ export set JAVA_OPTS="${JAVA_OPTS} -Xdebug -Xrunjdwp:server=y,transport=dt_socke
 
 ### windows
 设置系统环境变量
+
+# reference
+http://docs.spring.io/spring-boot/docs/1.5.2.RELEASE/reference/htmlsingle/#using-boot-devtools-restart
