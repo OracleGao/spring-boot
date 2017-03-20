@@ -3,3 +3,5 @@ server:
   
 logging:
   config: classpath:log4j2-dev.xml
+
+spring.devtools.remote.secret: example6
