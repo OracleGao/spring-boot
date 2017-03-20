@@ -28,6 +28,8 @@
 ```yml
     # secret要复杂并且难以猜测，否则远程同步服务就变成后门了
     spring.devtools.remote.secret: secret
+    #添加sync-trigger文件，当该文件被更新，并且其它代码或配置项修改才会触发远程更新操作
+    spring.devtools.restart.trigger-file: sync-trigger
 ```
 ## 发布远程项目
    打包发布
