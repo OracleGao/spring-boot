@@ -1,25 +1,23 @@
-#源码基于
-
+# 婧愮爜鍩轰簬椤圭洰
 example2
 
-#目标
+# 鐩爣
 
-- 远程更新应用
-- 远程debug
+- 杩滅▼鏇存柊搴旂敤
+- 杩滅▼debug
 
-#添加远程更新支持
+# 娣诲姞杩滅▼鏇存柊鏀寔
 
-1.在pom.xml中修改spring-boot-maven-plugin配置添加__excludeDevtools配置项__
-
+1.鍦╬om.xml涓慨鏀箂pring-boot-maven-plugin閰嶇疆娣诲姞 __excludeDevtools閰嶇疆椤筥_
 ```xml
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				__<configuration>__
-					__<excludeDevtools>false</excludeDevtools>__
-				__</configuration>__
+				<configuration>
+					<excludeDevtools>false</excludeDevtools>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
