@@ -45,7 +45,7 @@
 ```shell
 #!/usr/bin/env bash
 export set JAVA_OPTS="${JAVA_OPTS} -Xdebug -Xrunjdwp:server=y,transport=dt_socket,suspend=n,address=8000"
-java -jar project.jar
+./mvnw clean install spring-boot:run
 ```
 参数说明
 - server server模式
