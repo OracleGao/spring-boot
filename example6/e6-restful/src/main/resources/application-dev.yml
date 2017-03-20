@@ -5,3 +5,4 @@ logging:
   config: classpath:log4j2-dev.xml
 
 spring.devtools.remote.secret: example6
+spring.devtools.restart.trigger-file: sync-trigger
