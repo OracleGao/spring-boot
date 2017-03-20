@@ -24,3 +24,18 @@
 		</plugins>
 	</build>
 ```
+2. 在application配置中添加配置项
+```yml
+    spring.devtools.remote.secret: secret
+```
+## 发布远程项目
+
+## 启动本地服务同步代码和配置
+### 要点
+1. 使用devtools提供的启动类启动同步服务
+   org.springframework.boot.devtools.RemoteSpringApplication
+2. 远程服务入口作为启动参数
+   http://${远程项目主机地址}:${远程项目端口}/${项目的contextpath}
+3. 要在本地项目上下文中启动同步服务（classpath上要有与远程服务一一对应的完整的编译后的代码和配置）
+
+   
