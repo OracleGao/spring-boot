@@ -1,25 +1,25 @@
-# Ê¹ÓÃÄÚ´æÊı¾İ¿âh2£¬ÀûÓÃmybatisÔö¼Ó½ÓÊÕµ½µÄÏûÏ¢³Ö¾Ã»¯ºÍ²éÑ¯¹¦ÄÜ
-## Ìí¼Óh2Êı¾İÖ§³Ö
-- ÅäÖÃmaven
-- ÅäÖÃÊı¾İÔ´
-- ³õÊ¼»¯Êı¾İ¿âºÍÊı¾İ
+# ä½¿ç”¨å†…å­˜æ•°æ®åº“h2ï¼Œåˆ©ç”¨mybatiså¢åŠ æ¥æ”¶åˆ°çš„æ¶ˆæ¯æŒä¹…åŒ–å’ŒæŸ¥è¯¢åŠŸèƒ½
+## æ·»åŠ h2æ•°æ®æ”¯æŒ
+- é…ç½®maven
+- é…ç½®æ•°æ®æº
+- åˆå§‹åŒ–æ•°æ®åº“å’Œæ•°æ®
 
-## Ìí¼ÓmybatisÖ§³Ö
-- ÅäÖÃmaven
-- ÅäÖÃmybatis
-- Ìí¼ÓÊÂÎïÖ§³Ö
-- ¿ª·¢mapperºÍdao(data access object)
+## æ·»åŠ mybatisæ”¯æŒ
+- é…ç½®maven
+- é…ç½®mybatis
+- æ·»åŠ äº‹ç‰©æ”¯æŒ
+- å¼€å‘mapperå’Œdao(data access object)
 
-## ¿ª·¢ÒµÎñ¹¦ÄÜ
+## å¼€å‘ä¸šåŠ¡åŠŸèƒ½
 
 
-## ²âÊÔ²éÑ¯
+## æµ‹è¯•æŸ¥è¯¢
 ## url
 http://localhost:18080/message
 ## method
 get
 
-## ²âÊÔĞÂÔö³Ö¾Ã»¯
+## æµ‹è¯•æ–°å¢æŒä¹…åŒ–
 ### url
 http://localhost:18080/message
 ### method
@@ -27,8 +27,10 @@ post
 ### Content-Type
 text/xml
 ### body
+```xml
 <xml>
 <fromUserName>Clyne</fromUserName>
 <toUserName>MessageServer</toUserName>
-<content>ºÃºÃÑ§Ï°£¬ÌìÌìÏòÉÏ</content>
+<content>å¥½å¥½å­¦ä¹ ï¼Œå¤©å¤©å‘ä¸Š</content>
 </xml>
+```
