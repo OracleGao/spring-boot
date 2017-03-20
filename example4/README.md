@@ -1,9 +1,9 @@
-# 添加 actuator支持 
-- 添加maven依赖
-- 添加配置
-- 添加远程关闭服务
+# 娣诲姞 actuator鏀寔 
+- 娣诲姞maven渚濊禆
+- 娣诲姞閰嶇疆
+- 娣诲姞杩滅▼鍏抽棴鏈嶅姟
 
-# 访问 actuator 接口
+# 璁块棶 actuator 鎺ュ彛
 ## url
 http://localhost:18080/actuator/health
 http://localhost:18080/actuator/configprops
@@ -18,7 +18,7 @@ http://localhost:18080/actuator/dump
 ## method
 get
 
-#远程关闭服务
+# 杩滅▼鍏抽棴鏈嶅姟
 ## url
 http://localhost:18080/actuator/shutdown
 ## method
