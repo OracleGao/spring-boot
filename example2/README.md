@@ -1,26 +1,26 @@
-# Ìí¼Óutf-8×Ö·û¼¯Ö§³Ö
-Ìí¼Óapplication
+# æ·»åŠ utf-8å­—ç¬¦é›†æ”¯æŒ
+æ·»åŠ application
 
-# Ìí¼Ó¿çÓòÖ§³Ö
-Ìí¼ÓapplicationÅäÖÃ
+# æ·»åŠ è·¨åŸŸæ”¯æŒ
+æ·»åŠ applicationé…ç½®
 
-# Ìí¼ÓjsonÏûÏ¢Ð­ÒéÖ§³Ö
-Ä¬ÈÏÖ§³Ö
+# æ·»åŠ jsonæ¶ˆæ¯åè®®æ”¯æŒ
+é»˜è®¤æ”¯æŒ
 
-# Ìí¼ÓxmlÏûÏ¢¸ñÊ½Ö§³Ö
-Ìí¼ÓmavenÒÀÀµ
+# æ·»åŠ xmlæ¶ˆæ¯æ ¼å¼æ”¯æŒ
+æ·»åŠ mavenä¾èµ–
 
-# ¿ª·¢RestfulÏûÏ¢½Ó¿Ú
-- ½ÓÊÕ¿Í»§¶Ë·¢ËÍµÄxml¸ñÊ½ÏûÏ¢,½âÎöÏûÏ¢ÄÚÈÝcontent£¬
-- µ÷»»·¢ËÍÕßfromUserNameºÍ½ÓÊÕÕßtoUserName,
-- ¸ù¾ÝÅäÖÃ£¬¸øÊÕµ½µÄÏûÏ¢¼ÓÇ°×º²¢
-- ÒÔjson¸ñÊ½·µ»Ø´¦Àí¹ýµÄÏûÏ¢
+# å¼€å‘Restfulæ¶ˆæ¯æŽ¥å£
+- æŽ¥æ”¶å®¢æˆ·ç«¯å‘é€çš„xmlæ ¼å¼æ¶ˆæ¯,è§£æžæ¶ˆæ¯å†…å®¹contentï¼Œ
+- è°ƒæ¢å‘é€è€…fromUserNameå’ŒæŽ¥æ”¶è€…toUserName,
+- æ ¹æ®é…ç½®ï¼Œç»™æ”¶åˆ°çš„æ¶ˆæ¯åŠ å‰ç¼€å¹¶
+- ä»¥jsonæ ¼å¼è¿”å›žå¤„ç†è¿‡çš„æ¶ˆæ¯
 
-## ´¦ÀíÅäÖÃÏîexample.message.resprefix
+## å¤„ç†é…ç½®é¡¹example.message.resprefix
 
-##¿ª·¢restful½Ó¿ÚºÍÏàÓ¦¹¦ÄÜ
+##å¼€å‘restfulæŽ¥å£å’Œç›¸åº”åŠŸèƒ½
 
-## ²âÊÔ
+## æµ‹è¯•
 ### url
 http://localhost:18080/message
 ### method
@@ -28,8 +28,10 @@ post
 ### Content-Type
 text/xml
 ### body
+```xml
 <xml>
 <fromUserName>Clyne</fromUserName>
 <toUserName>MessageServer</toUserName>
-<content>ºÃºÃÑ§Ï°£¬ÌìÌìÏòÉÏ</content>
+<content>å¥½å¥½å­¦ä¹ ï¼Œå¤©å¤©å‘ä¸Š</content>
 </xml>
+```
