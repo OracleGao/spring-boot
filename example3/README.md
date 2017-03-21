@@ -1,3 +1,6 @@
+# project base on
+example2
+
 # 使用内存数据库h2，利用mybatis增加接收到的消息持久化和查询功能
 ## 添加h2数据支持
 - 配置maven

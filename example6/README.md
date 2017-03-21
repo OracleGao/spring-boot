@@ -3,6 +3,9 @@
 - 更新远程应用
 - 远程debug
 
+# project base on
+example2
+
 # 前提条件
 项目中已经增加了devtools功能
 
