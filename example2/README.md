@@ -1,9 +1,3 @@
-# 添加utf-8字符集支持
-添加application
-
-# 添加跨域支持
-添加application配置
-
 # 添加json消息协议支持
 默认支持
 
@@ -18,7 +12,7 @@
 
 ## 处理配置项example.message.resprefix
 
-##开发restful接口和相应功能
+## 开发restful接口和相应功能
 
 ## 测试
 ### url

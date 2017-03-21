@@ -1,3 +1,19 @@
 spring:
   profiles:
     active: dev
+
+server:    
+  http:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+      
+endpoints:
+  cors:
+    allowCredentials: true
+    allowedMethods:
+      - GET
+      - POST
+    allowedHeaders: '*'
+    allowedOrigins: '*'

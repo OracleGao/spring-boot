@@ -1,8 +1,14 @@
-# ´´½¨¿ÕÏîÄ¿
-- ¸ù¾Ý¹Ù·½Àý×ÓÐÞ¸Ä»ò´Ópom.xml¿ªÊ¼¡£
-- Ìí¼ÓapplictionÅäÖÃÎÄ¼þ£¬ yml»òÕßproperties£¬½¨Òéyml¡£
+# åˆ›å»ºç©ºé¡¹ç›®
+- æ ¹æ®å®˜æ–¹ä¾‹å­ä¿®æ”¹æˆ–ä»Žpom.xmlå¼€å§‹ã€‚
+- æ·»åŠ applictioné…ç½®æ–‡ä»¶ï¼Œ ymlæˆ–è€…propertiesï¼Œå»ºè®®ymlã€‚
 
-# ÅäÖÃ¿ª·¢»·¾³
-- Ìí¼Ó¿ª·¢ÅäÖÃºÍÉú²úÅäÖÃ Ê¹ÓÃ-Dspring.profiles.active=prod¼¤»îÉú²úÅäÖÃ    
-- Ìí¼Ó¶¯Ì¬×°ÔØ
-- Ìí¼ÓÈÕÖ¾ log4j2.xmlÒÔ¼°ÅäÖÃÒì²½log
+# é…ç½®å¼€å‘çŽ¯å¢ƒ
+- æ·»åŠ å¼€å‘é…ç½®å’Œç”Ÿäº§é…ç½® ä½¿ç”¨-Dspring.profiles.active=prodæ¿€æ´»ç”Ÿäº§é…ç½®    
+- æ·»åŠ åŠ¨æ€è£…è½½
+- æ·»åŠ æ—¥å¿— log4j2.xmlä»¥åŠé…ç½®å¼‚æ­¥log
+
+# æ·»åŠ utf-8å­—ç¬¦é›†æ”¯æŒ
+æ·»åŠ application
+
+# æ·»åŠ è·¨åŸŸæ”¯æŒ
+æ·»åŠ applicationé…ç½®
