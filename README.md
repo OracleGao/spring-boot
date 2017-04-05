@@ -27,13 +27,13 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 - 命令行界面
 
 # example index
-- (example1 基础框架和配置)[https://github.com/OracleGao/spring-boot/tree/master/example1]
-- (example2 restful服务开发)[https://github.com/OracleGao/spring-boot/tree/master/example2]
-- (example3 整合mybatis)[https://github.com/OracleGao/spring-boot/tree/master/example3]
-- (example4 actuator)[https://github.com/OracleGao/spring-boot/tree/master/example4]
-- (example5 testing)[https://github.com/OracleGao/spring-boot/tree/master/example5]
-- (example6 远程调式)[https://github.com/OracleGao/spring-boot/tree/master/example6]
-- (example7 JPA)[https://github.com/OracleGao/spring-boot/tree/master/example7]
+- [example1 基础框架和配置](https://github.com/OracleGao/spring-boot/tree/master/example1)
+- [example2 restful服务开发](https://github.com/OracleGao/spring-boot/tree/master/example2)
+- [example3 整合mybatis](https://github.com/OracleGao/spring-boot/tree/master/example3)
+- [example4 actuator](https://github.com/OracleGao/spring-boot/tree/master/example4)
+- [example5 testing](https://github.com/OracleGao/spring-boot/tree/master/example5)
+- [example6 远程调式](https://github.com/OracleGao/spring-boot/tree/master/example6)
+- [example7 JPA](https://github.com/OracleGao/spring-boot/tree/master/example7)
 - example8 elasticsearch
 
 # 写在最后的话
