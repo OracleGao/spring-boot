@@ -4,20 +4,20 @@ spring boot 是根据约定优于配置的解决方案，创建独立的、产�
 ## 官方例子
 git clone https://github.com/spring-guides/gs-rest-service.git
 
-# 为什么会产生spring boot
+# 为什么会产生Spring Boot
 - 难以构建开发环境
 - 组件版本依赖冲突
 - 产品级开发有距离
 - 组件复用度低
 - “配置地狱”
 
-# spring boot 主要目标:
+# Spring Boot 主要目标
 - 入门简单
 - 产品级开发
 - 简化配置
 - 关注业务
 
-# Spring boot 特性
+# Spring Boot 特性
 - 自动配置
 - 起步依赖
 - Actuator
@@ -28,7 +28,7 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 
 # Example
 ## 前置条件
-- 掌握spring framework相关技术
+- 掌握Spring Framework相关技术
 - 掌握基本的yml语法
 - 掌握java8函数式编程基础
 - 理解并能够使用http restful client(Postman in Chrome, RESTClient in Firefox)访问restful服务
@@ -40,7 +40,9 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 - [example5 testing](https://github.com/OracleGao/spring-boot/tree/master/example5)
 - [example6 远程调式](https://github.com/OracleGao/spring-boot/tree/master/example6)
 - [example7 JPA](https://github.com/OracleGao/spring-boot/tree/master/example7)
-- example8 elasticsearch
+- example8 Elasticsearch
+- example9 JSP
+- example10 Spring Security
 
 # 写在最后的话
 - java应用搭积木乐趣多多
