@@ -26,7 +26,13 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 - 简化发布
 - 命令行界面
 
-# example index
+# example
+## 前置条件
+- 掌握spring framework相关技术
+- 掌握基本的yml语法
+- 掌握java8函数式编程基础
+- 理解并能够使用http restful client(Postman in Chrome, RESTClient in Firefox)访问restful服务
+## Index
 - [example1 基础框架和配置](https://github.com/OracleGao/spring-boot/tree/master/example1)
 - [example2 restful服务开发](https://github.com/OracleGao/spring-boot/tree/master/example2)
 - [example3 整合mybatis](https://github.com/OracleGao/spring-boot/tree/master/example3)
