@@ -26,7 +26,7 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 - 简化发布
 - 命令行界面
 
-# example
+# Example
 ## 前置条件
 - 掌握spring framework相关技术
 - 掌握基本的yml语法
