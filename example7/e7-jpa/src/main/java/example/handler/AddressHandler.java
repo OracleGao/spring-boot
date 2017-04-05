@@ -27,7 +27,7 @@ public class AddressHandler {
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public Page<Address> onGetAddress(@RequestParam Map<String, String> map, Pageable pageable) {
-		return addressRepository.findAll((root, criteriaQuery, criteriaBuilder) -> {
+		Page<Address> addresses = addressRepository.findAll((root, criteriaQuery, criteriaBuilder) -> {
 			List<Predicate> list = new ArrayList<Predicate>();
 			if (map.containsKey("ageLeft")) {
 				list.add(criteriaBuilder.greaterThanOrEqualTo(root.get("student").get("age").as(Integer.class), new Integer(map.get("ageLeft"))));
@@ -52,6 +52,8 @@ public class AddressHandler {
 				return null;
 			}
 		}, pageable);
+		addresses.forEach(address -> address.breakBidirectionalRelationship());
+		return addresses;
 	}
 	
 }

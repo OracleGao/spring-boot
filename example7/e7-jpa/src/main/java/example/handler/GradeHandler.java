@@ -27,7 +27,7 @@ public class GradeHandler {
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public Page<Grade> onGet(@RequestParam Map<String, String> map, Pageable pageable){
-		Page<Grade> aaa = gradeRepository.findAll((root, criteriaQuery, criteriaBuilder) -> {
+		Page<Grade> grades = gradeRepository.findAll((root, criteriaQuery, criteriaBuilder) -> {
 			List<Predicate> list = new ArrayList<Predicate>();
 			if (map.containsKey("name")) {
 				list.add(criteriaBuilder.like(root.get("name"), "%" + map.get("name") + "%"));
@@ -40,7 +40,8 @@ public class GradeHandler {
 				return null;
 			}
 		}, pageable);
-		return aaa;
+		grades.forEach(grade -> grade.breakBidirectionalRelationship());
+		return grades;
 	}
 	
 }

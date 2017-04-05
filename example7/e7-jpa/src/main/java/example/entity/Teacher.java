@@ -12,11 +12,7 @@ import javax.persistence.ManyToOne;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
 @Entity
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Teacher implements Mergeable<Teacher> {
 	 
 	@GeneratedValue
@@ -47,6 +43,22 @@ public class Teacher implements Mergeable<Teacher> {
 			this.grade.merge(teacher.grade);
 		}
 	}
+	
+	/** 
+	 *  solve json serialization Infinite Recursion with jpa bi-directional relationship
+	 */
+	public void breakBidirectionalRelationship() {
+		this.students.forEach(student -> student.releaseBidirectionalRelationship());
+		this.grade.releaseBidirectionalRelationship();
+	} 
+	
+	/** 
+	 *  release jpa bi-directional relationship
+	 */
+	void releaseBidirectionalRelationship() {
+		this.students = null;
+		this.grade = null;
+	} 
 	
 	public long getId() {
 		return id;
@@ -79,5 +91,5 @@ public class Teacher implements Mergeable<Teacher> {
 	public void setStudents(Set<Student> students) {
 		this.students = students;
 	}
-	
+
 }

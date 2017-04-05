@@ -40,7 +40,7 @@ public class StudentHandler {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public Page<Student> onGet(@RequestParam Map<String, String> map, Pageable pageable) {
-		return studentRepository.findAll((root, criteriaQuery, criteriaBuilder) -> {
+		Page<Student> students =  studentRepository.findAll((root, criteriaQuery, criteriaBuilder) -> {
 			List<Predicate> list = new ArrayList<Predicate>();
 			if (map.containsKey("ageLeft")) {
 				list.add(criteriaBuilder.greaterThanOrEqualTo(root.get("age").as(Integer.class), new Integer(map.get("ageLeft"))));
@@ -65,6 +65,8 @@ public class StudentHandler {
 				return null;
 			}
 		}, pageable);
+		students.forEach(student -> student.breakBidirectionalRelationship());
+		return students;
 	}
 
 	@RequestMapping(path = "/{id}", method = RequestMethod.PUT)

@@ -28,7 +28,7 @@ public class TeacherHandler {
 	@RequestMapping(method = RequestMethod.GET)
 	public Page<Teacher> onGet(@RequestParam Map<String, String> map, Pageable pageable){
 
-		return teacherRepository.findAll((root, criteriaQuery, criteriaBuilder) -> {
+		Page<Teacher> teachers = teacherRepository.findAll((root, criteriaQuery, criteriaBuilder) -> {
 			List<Predicate> list = new ArrayList<Predicate>();
 			if (map.containsKey("name")) {
 				list.add(criteriaBuilder.like(root.get("name"), "%" + map.get("name") + "%"));
@@ -44,6 +44,10 @@ public class TeacherHandler {
 				return null;
 			}
 		}, pageable);
+		
+		//solve json serialization Infinite Recursion with jpa bi-directional relationship 
+		teachers.forEach(teacher -> teacher.breakBidirectionalRelationship());
+		return teachers;
 	}
 	
 }

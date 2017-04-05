@@ -1,6 +1,8 @@
 spring:
   profiles:
     active: dev
+  jackson:
+    defaultPropertyInclusion: NON_NULL
 
 server:    
   http:
@@ -18,5 +20,5 @@ endpoints:
     allowedHeaders: '*'
     allowedOrigins: '*'
     
-example.message:
-  resprefix: 您发送的消息是：
+
+    

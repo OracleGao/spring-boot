@@ -10,11 +10,7 @@ import javax.persistence.OneToMany;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
 @Entity
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Grade implements Mergeable<Grade> {
 	
 	@GeneratedValue
@@ -25,7 +21,6 @@ public class Grade implements Mergeable<Grade> {
 	
 	@OneToMany(cascade = CascadeType.REFRESH, mappedBy = "grade")
 	private Set<Teacher> teachers;
-
 	public Grade() {
 		super();
 	}
@@ -42,6 +37,14 @@ public class Grade implements Mergeable<Grade> {
 		if (grade.teachers != null && grade.teachers.size() > 0) {
 			this.teachers.addAll(grade.teachers);
 		}
+	}
+	
+	public void breakBidirectionalRelationship() {
+		this.teachers.forEach(teacher -> teacher.releaseBidirectionalRelationship());
+	}
+	
+	void releaseBidirectionalRelationship() {
+		this.teachers = null;
 	}
 	
 	public long getId() {

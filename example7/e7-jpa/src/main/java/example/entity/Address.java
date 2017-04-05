@@ -8,12 +8,8 @@ import javax.persistence.OneToOne;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
 @Entity
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Address implements Mergeable<Address> {
+public class Address implements Mergeable<Address>, Bidirectional {
 
 	@GeneratedValue
 	@Id
@@ -37,6 +33,15 @@ public class Address implements Mergeable<Address> {
 		if (StringUtils.isNotBlank(address.zipCode)) {
 			this.zipCode = address.zipCode;
 		}
+	}
+	
+
+	public void breakBidirectionalRelationship() {
+		student.releaseBidirectionalRelationship();
+	}
+	
+	public void releaseBidirectionalRelationship() {
+		this.student = null;
 	}
 	
 	public long getId() {
