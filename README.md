@@ -1,34 +1,44 @@
-# Ê²Ã´ÊÇspring boot?
-spring boot ÊÇ¸ù¾İÔ¼¶¨ÓÅÓÚÅäÖÃµÄ½â¾ö·½°¸£¬´´½¨¶ÀÁ¢µÄ¡¢²úÆ·¼¶µÄÓ¦ÓÃµÄspring¿ò¼Ü¡£
+# ä»€ä¹ˆæ˜¯spring boot?
+spring boot æ˜¯æ ¹æ®çº¦å®šä¼˜äºé…ç½®çš„è§£å†³æ–¹æ¡ˆï¼Œåˆ›å»ºç‹¬ç«‹çš„ã€äº§å“çº§çš„åº”ç”¨çš„springæ¡†æ¶ã€‚
 
-## ¹Ù·½Àı×Ó
+## å®˜æ–¹ä¾‹å­
 git clone https://github.com/spring-guides/gs-rest-service.git
 
-# ÎªÊ²Ã´»á²úÉúspring boot
-- ÄÑÒÔ¹¹½¨¿ª·¢»·¾³
-- ×é¼ş°æ±¾ÒÀÀµ³åÍ»
-- ²úÆ·¼¶¿ª·¢ÓĞ¾àÀë
-- ×é¼ş¸´ÓÃ¶ÈµÍ
-- ¡°ÅäÖÃµØÓü¡±
+# ä¸ºä»€ä¹ˆä¼šäº§ç”Ÿspring boot
+- éš¾ä»¥æ„å»ºå¼€å‘ç¯å¢ƒ
+- ç»„ä»¶ç‰ˆæœ¬ä¾èµ–å†²çª
+- äº§å“çº§å¼€å‘æœ‰è·ç¦»
+- ç»„ä»¶å¤ç”¨åº¦ä½
+- â€œé…ç½®åœ°ç‹±â€
 
-# spring boot Ö÷ÒªÄ¿±ê:
-- ÈëÃÅ¼òµ¥
-- ²úÆ·¼¶¿ª·¢
-- ¼ò»¯ÅäÖÃ
-- ¹Ø×¢ÒµÎñ
+# spring boot ä¸»è¦ç›®æ ‡:
+- å…¥é—¨ç®€å•
+- äº§å“çº§å¼€å‘
+- ç®€åŒ–é…ç½®
+- å…³æ³¨ä¸šåŠ¡
 
-# Spring boot ÌØĞÔ
-- ×Ô¶¯ÅäÖÃ
-- Æğ²½ÒÀÀµ
+# Spring boot ç‰¹æ€§
+- è‡ªåŠ¨é…ç½®
+- èµ·æ­¥ä¾èµ–
 - Actuator
-- ¹¹¼ş·á¸»
+- æ„ä»¶ä¸°å¯Œ
 - just run
-- ¼ò»¯·¢²¼
-- ÃüÁîĞĞ½çÃæ
+- ç®€åŒ–å‘å¸ƒ
+- å‘½ä»¤è¡Œç•Œé¢
 
-# Ğ´ÔÚ×îºóµÄ»°
-- javaÓ¦ÓÃ´î»ıÄ¾ÀÖÈ¤¶à¶à
-- ÂèÂèÔÙÒ²²»ÓÃµ£ĞÄÎÒ¿ª·¢²»ºÃjava restfulÓ¦ÓÃÁË
+# example index
+- (example1 åŸºç¡€æ¡†æ¶å’Œé…ç½®)[https://github.com/OracleGao/spring-boot/tree/master/example1]
+- (example2 restfulæœåŠ¡å¼€å‘)[https://github.com/OracleGao/spring-boot/tree/master/example2]
+- (example3 æ•´åˆmybatis)[https://github.com/OracleGao/spring-boot/tree/master/example3]
+- (example4 actuator)[https://github.com/OracleGao/spring-boot/tree/master/example4]
+- (example5 testing)[https://github.com/OracleGao/spring-boot/tree/master/example5]
+- (example6 è¿œç¨‹è°ƒå¼)[https://github.com/OracleGao/spring-boot/tree/master/example6]
+- (example7 JPA)[https://github.com/OracleGao/spring-boot/tree/master/example7]
+- example8 elasticsearch
+
+# å†™åœ¨æœ€åçš„è¯
+- javaåº”ç”¨æ­ç§¯æœ¨ä¹è¶£å¤šå¤š
+- å¦ˆå¦ˆå†ä¹Ÿä¸ç”¨æ‹…å¿ƒæˆ‘å¼€å‘ä¸å¥½java restfulåº”ç”¨äº†
 
 # Reference
 http://docs.spring.io/spring-boot/docs/1.5.2.RELEASE/reference/htmlsingle/
