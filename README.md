@@ -40,9 +40,10 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 - [example5 testing](https://github.com/OracleGao/spring-boot/tree/master/example5)
 - [example6 远程调式](https://github.com/OracleGao/spring-boot/tree/master/example6)
 - [example7 JPA](https://github.com/OracleGao/spring-boot/tree/master/example7)
-- example8 Elasticsearch
-- example9 JSP
-- example10 Spring Security
+- [example8 Elasticsearch](https://github.com/OracleGao/spring-boot/tree/master/example8)
+- [example9 多数据源支持](https://github.com/OracleGao/spring-boot/tree/master/example9)
+- example10 JSP
+- example11 Spring Security
 
 # 写在最后的话
 - java应用搭积木乐趣多多
