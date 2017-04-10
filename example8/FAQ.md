@@ -5,3 +5,7 @@ server log: Received message from unsupported version: [2.0.0] minimal compatibl
 目前spring data elasticsearch暂不支持2.4.4+版本
 降低elasticsearch版本到2.4.4
 [下载2.4.4版本](https://www.elastic.co/downloads/past-releases/elasticsearch-2-4-4)
+
+# through reference chain: org.springframework.data.elasticsearch.core.aggregation.impl.AggregatedPageImpl["facets"]
+## 解决办法
+出现问题的版本是spring boot 1.5.x版本, 使用spring boot 1.4.2版本。
