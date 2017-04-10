@@ -8,6 +8,9 @@
 # Project Base on
 example2
 
+# [FAQ](https://github.com/OracleGao/spring-boot/tree/master/example8/FAQ.md)
+
+
 # Reference
 - [JPA](https://github.com/OracleGao/spring-boot/tree/master/example7)
 - [Elasticsearch 安装](https://github.com/OracleGao/elasticsearch/blob/master/You%20Know%20for%20Search.md#installation)
