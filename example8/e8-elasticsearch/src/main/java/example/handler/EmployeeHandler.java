@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.RangeQueryBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -27,6 +28,7 @@ public class EmployeeHandler {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public Page<Employee> onGetEmployee(@RequestParam Map<String, String> map, Pageable pageable) {
+		
 		BoolQueryBuilder queryBuilder = QueryBuilders.boolQuery();
 		if (map.containsKey("name")) {
 			queryBuilder.must(QueryBuilders.matchQuery("name", map.get("name")));
@@ -36,6 +38,20 @@ public class EmployeeHandler {
 		}
 		if (map.containsKey("interests")) {
 			queryBuilder.must(QueryBuilders.matchQuery("interests", map.get("interests")));
+		}
+		RangeQueryBuilder rangeQueryBuilder = null;
+		if (map.containsKey("ageLeft")) {
+			rangeQueryBuilder = new RangeQueryBuilder("age");
+			rangeQueryBuilder.gte(Integer.parseInt(map.get("ageLeft")));
+		}
+		if (map.containsKey("ageRight")) {
+			if (rangeQueryBuilder == null) {
+				rangeQueryBuilder = new RangeQueryBuilder("age");
+			}
+			rangeQueryBuilder.lte(Integer.parseInt(map.get("ageRight")));
+		}
+		if (rangeQueryBuilder != null) {
+			queryBuilder.must(rangeQueryBuilder);
 		}
 		Page<Employee> employees = employeeRepository.search(queryBuilder, pageable);
 		return employees;
@@ -56,8 +72,9 @@ public class EmployeeHandler {
 
 	@RequestMapping(path = "/{id}", method = RequestMethod.PUT)
 	public Employee onPutEmployee(@PathVariable("id") String id, @RequestBody Employee employee) {
-		employee.setId(id);
-		return employeeRepository.save(employee);
+		Employee temp = employeeRepository.findOne(id);
+		temp.merge(employee);
+		return employeeRepository.save(temp);
 	}
 
 	@RequestMapping(path = "/{id}", method = RequestMethod.DELETE)
