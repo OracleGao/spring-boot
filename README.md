@@ -27,11 +27,14 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 - 命令行界面
 
 # Example
-## 前置条件
+## 知识准备
 - 掌握Spring Framework相关技术
-- 掌握基本的yml语法
-- 掌握java8函数式编程基础
-- 理解并能够使用http restful client(Postman in Chrome, RESTClient in Firefox)访问restful服务
+- 了解yml语法
+- 了解java8函数式编程基础
+- 掌握http restful client(Postman in Chrome, RESTClient in Firefox)访问restful服务
+- 掌握关系数据库的使用
+- 了解elasticsearch的使用
+
 ## Index
 - [example1 基础框架和配置](https://github.com/OracleGao/spring-boot/tree/master/example1)
 - [example2 restful服务开发](https://github.com/OracleGao/spring-boot/tree/master/example2)
@@ -43,7 +46,7 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 - [example8 Elasticsearch](https://github.com/OracleGao/spring-boot/tree/master/example8)
 - [example9 多数据源支持1](https://github.com/OracleGao/spring-boot/tree/master/example9)
 
-  h2(关系型数据库) vs elasticsearch
+  * h2(关系型数据库) vs elasticsearch
 - example10 JSP
 - example11 Spring Security
 
