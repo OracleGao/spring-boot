@@ -12,5 +12,5 @@ example2
 
 
 # Reference
-- [JPA](https://github.com/OracleGao/spring-boot/tree/master/example7)
+- [JPA](https://github.com/OracleGao/spring-boot/tree/master/example07)
 - [Elasticsearch 安装](https://github.com/OracleGao/elasticsearch/blob/master/You%20Know%20for%20Search.md#installation)

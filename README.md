@@ -36,15 +36,15 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 - 了解elasticsearch的使用
 
 ## Index
-- [example1 基础框架和配置](https://github.com/OracleGao/spring-boot/tree/master/example1)
-- [example2 restful服务开发](https://github.com/OracleGao/spring-boot/tree/master/example2)
-- [example3 整合mybatis](https://github.com/OracleGao/spring-boot/tree/master/example3)
-- [example4 actuator](https://github.com/OracleGao/spring-boot/tree/master/example4)
-- [example5 testing](https://github.com/OracleGao/spring-boot/tree/master/example5)
-- [example6 远程调式](https://github.com/OracleGao/spring-boot/tree/master/example6)
-- [example7 JPA](https://github.com/OracleGao/spring-boot/tree/master/example7)
-- [example8 Elasticsearch](https://github.com/OracleGao/spring-boot/tree/master/example8)
-- [example9 多数据源支持1](https://github.com/OracleGao/spring-boot/tree/master/example9)
+- [example1 基础框架和配置](https://github.com/OracleGao/spring-boot/tree/master/example01)
+- [example2 restful服务开发](https://github.com/OracleGao/spring-boot/tree/master/example02)
+- [example3 整合mybatis](https://github.com/OracleGao/spring-boot/tree/master/example03)
+- [example4 actuator](https://github.com/OracleGao/spring-boot/tree/master/example04)
+- [example5 testing](https://github.com/OracleGao/spring-boot/tree/master/example05)
+- [example6 远程调式](https://github.com/OracleGao/spring-boot/tree/master/example06)
+- [example7 JPA](https://github.com/OracleGao/spring-boot/tree/master/example07)
+- [example8 Elasticsearch](https://github.com/OracleGao/spring-boot/tree/master/example08)
+- [example9 多数据源支持1](https://github.com/OracleGao/spring-boot/tree/master/example09)
 
   * h2(关系型数据库) vs elasticsearch
 - example10 JSP
