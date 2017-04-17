@@ -10,7 +10,7 @@
 	</parent>
 
 	<groupId>org.springframework</groupId>
-	<artifactId>e1-initial</artifactId>
+	<artifactId>e8-elasticsearch</artifactId>
 	<version>1.0.0</version>
 
 	<properties>
