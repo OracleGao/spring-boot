@@ -39,10 +39,10 @@ public class EmployeeDbHandler {
 		Page<Employee> employee =  employeeDbRepository.findAll((root, criteriaQuery, criteriaBuilder) -> {
 			List<Predicate> list = new ArrayList<Predicate>();
 			if (map.containsKey("ageLeft")) {
-				list.add(criteriaBuilder.greaterThanOrEqualTo(root.get("age").as(Integer.class), new Integer(map.get("ageLeft"))));
+				list.add(criteriaBuilder.greaterThanOrEqualTo(root.get("age").as(Integer.class), Integer.valueOf(map.get("ageLeft"))));
 			}
 			if (map.containsKey("ageRight")) {
-				list.add(criteriaBuilder.lessThanOrEqualTo(root.get("age").as(Integer.class), new Integer(map.get("ageRight"))));
+				list.add(criteriaBuilder.lessThanOrEqualTo(root.get("age").as(Integer.class), Integer.valueOf(map.get("ageRight"))));
 			}
 			if (map.containsKey("name")) {
 				list.add(criteriaBuilder.like(root.get("name"), "%" + map.get("name") + "%"));
