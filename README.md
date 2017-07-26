@@ -45,6 +45,7 @@ git clone https://github.com/spring-guides/gs-rest-service.git
 - [example7 JPA](https://github.com/OracleGao/spring-boot/tree/master/example07)
 - [example8 Elasticsearch](https://github.com/OracleGao/spring-boot/tree/master/example08)
 - [example9 多数据源支持1](https://github.com/OracleGao/spring-boot/tree/master/example09)
+- [example10 集成swagger ](https://github.com/OracleGao/spring-boot/tree/master/example10)
 
   * h2(关系型数据库) vs elasticsearch
 - example10 JSP

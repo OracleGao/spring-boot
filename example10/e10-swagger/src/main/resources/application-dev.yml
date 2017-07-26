@@ -1,0 +1,28 @@
+server:
+  port: 18080
+  
+logging:
+  config: classpath:log4j2-dev.xml
+  
+spring:
+  datasource:
+    url: jdbc:h2:mem:message_db
+    username: sa
+    password: sa
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    
+  h2.console:
+    path: /h2/console
+    enabled: true
+    
+  jpa:
+    showSql: true
+    hibernate:
+      ddlAuto: none
+  
+management:
+  security:
+    enabled: false
+  contextPath: /actuator      
+  
